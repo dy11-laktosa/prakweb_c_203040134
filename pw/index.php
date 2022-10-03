@@ -53,7 +53,7 @@ $Buku = query("SELECT * FROM buku");
             <td> <img src="img/<?= $b["gambar"] ?>" alt="" width="100px" height="100px"></td>
             <td>
               <a href="ubah.php?id=<?= $b['id'] ?>" class="waves-effect waves-light btn tosca lighten-3 center"><i class="material-icons left">create</i>Change</a>
-              <a href="hapus.php?id=<?= $b['id'] ?>" onclick="return confirm('Delete the data?')" class="waves-effect waves-light btn green lighten-3"><i class="material-icons left">delete</i>Delete</a>
+              <a href="hapus.php?id=<?= $b['id'] ?>" onclick="return confirm('Delete the data?')" class="waves-effect waves-light btn tosca lighten-3"><i class="material-icons left">delete</i>Delete</a>
 
             </td>
           </tr>
