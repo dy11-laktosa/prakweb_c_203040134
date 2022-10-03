@@ -36,24 +36,24 @@ function upload()
     $ekstensi_file = strtolower(end($ekstensi_file));
     if (!in_array($ekstensi_file, $daftar_gambar)) {
         echo "<script>
-     alert('wrong file upload, please try again!');
-  </script>";
+    alert('wrong file upload, please try again!');
+</script>";
         return false;
     }
 
     //cek tipe file
     if ($tipe_file != 'image/jpeg' && $tipe_file != 'image/png') {
         echo "<script>
-     alert('wrong file upload, please try again!');
-  </script>";
+    alert('wrong file upload, please try again!');
+</script>";
         return false;
     }
 
     //cek ukuran file
     if ($ukuran_file > 10000000) {
         echo "<script>
-     alert('File size too big, please upload another file');
-  </script>";
+    alert('File size too big, please upload another file');
+</script>";
         return false;
     }
 
